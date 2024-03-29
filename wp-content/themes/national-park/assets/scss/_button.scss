@@ -1,0 +1,98 @@
+.btn-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none !important;
+  width: 100%;
+}
+.btn {
+  @include flex(center, center, null, null);
+  border: 2px solid $lightYellow;
+  transition: all 0.2s ease-in-out;
+  padding: 10px 32px;
+  background-color: $lightYellow;
+  box-shadow: none;
+  outline: none;
+  color: $white;
+  height: fit-content;
+  position: relative;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  @extend .text-20;
+  @media screen and (max-width: 1440px){
+    font-size: 18px;
+  }
+  @media screen and (max-width: 991px){
+    font-size: 16px;
+  }
+  
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border-color: $lightYellow;
+    color: $lightYellow;
+  }
+
+  &.btn-white {
+    border: 2px solid $white;
+    background-color: $white;
+    color: $lightYellow;
+
+    &:hover,
+    &:focus {
+      background-color: $lightYellow;
+      border-color: $lightYellow;
+      color: $white;
+    }
+  }
+  &.btn-lightsky {
+    border: 2px solid $pinkDark;
+    background-color: $pinkDark;
+    color: $yellow;
+    &:hover{
+      border-color: $white;
+      background-color: $white;
+    }
+  }
+
+  &.btn-lightBrown {
+    border: 2px solid $lightYellow;
+    background-color: $lightYellow;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      border-color: $lightYellow;
+      color: $lightYellow;
+    }
+  }
+
+  &.btn-transparent-brown {
+    background-color: transparent;
+    border-color: $lightYellow;
+    color: $lightYellow;
+
+    &:hover,
+    &:focus {
+      background-color: $lightYellow;
+      border-color: $lightYellow;
+      color: $white;
+    }
+  }
+
+  &.btn-transparent-white {
+    background-color: transparent;
+    border-color: $white;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      background-color: $lightYellow;
+      border-color: $lightYellow;
+      color: $white;
+    }
+  }
+}
+
