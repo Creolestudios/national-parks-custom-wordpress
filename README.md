@@ -6,11 +6,6 @@
 - User can explore national parks based on the continent and country.
 
 
-## Reference link
-
-Insert gif or link to demo
-
-
 ## Features
 
 - A custom theme was built entirely from scratch.
